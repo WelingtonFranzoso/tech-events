@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/techEvents
+    username: franzoso
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        package-to-scan: com.franzoso.model
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+aws:
+  region: ${AWS_REGION:us-east-1}
+  bucket:
+    name: ${AWS_BUCKET_NAME:techEventsAPI-images}
+  accessKey: ""
+  secretKey: ""
+
+admin:
+  key: ${ADMIN_KEY:admin}
+
+server:
+  port: 8080
