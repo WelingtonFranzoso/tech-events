@@ -6,7 +6,7 @@
 # Sobre o projeto
 
 Tech Events API é uma aplicação backend que fornece uma API RESTful para realizar operações de CRUD em eventos. A aplicação utiliza DTOs para garantir uma gestão eficiente e segura dos dados. O Flyway é utilizado para assegurar a criação das tabelas de entidade no banco de dados.
-Além disso, as imagens são obtidas diretamente de um bucket S3 da AWS. O banco de dados utilizado é o PostgreSQL, que é executado dentro de um container Docker.
+Além disso, a aplicação faz upload das imagens diretamente de um bucket S3 da AWS. O banco de dados utilizado é o PostgreSQL, que é executado dentro de um container Docker.
 
 
 
@@ -15,7 +15,7 @@ Além disso, as imagens são obtidas diretamente de um bucket S3 da AWS. O banco
 - Gerenciamento de Banco de Dados com Flyway: para gerar a tabela no banco de dados.
 - Paginação no retorno das requisições HTTP-GET.
 - Persistência de Dados: Utiliza o PostgreSQL como banco de dados relacional para armazenar as informações dos produtos.
-- Busca e retona uma imagem de um bucket S3 da AWS.
+- Upload de uma imagem de um bucket S3 da AWS.
 
 # Tecnologias utilizadas
 - Java: Linguagem de programação utilizada para o desenvolvimento.
@@ -26,7 +26,7 @@ Além disso, as imagens são obtidas diretamente de um bucket S3 da AWS. O banco
 - Postgres: Banco de dados relacional.
 - PgAdmin: Ferramenta gráfica para gerenciamento do PostgreSQL.
 - Docker: Utilizado para containerizar o banco de dados PostgreSQL e PgAdmin.
-- AWS S3Client - Para buscar e retornar uma imagem em um bucket.
+- AWS S3Client - Para upload e retorno de uma imagem que está em um bucket.
 
 # Endpoints
 ## Os seguintes endpoints estão disponíveis para interagir com a aplicação:
